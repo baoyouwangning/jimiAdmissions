@@ -10,6 +10,7 @@ class ContentsController < ApplicationController
   # GET /contents/1
   # GET /contents/1.json
   def show
+    @student = Student.new
   end
 
   # GET /contents/new

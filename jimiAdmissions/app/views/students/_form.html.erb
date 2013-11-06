@@ -1,31 +1,38 @@
-<div id="form_wrapper">
-    <%= form_for(@student) do |f| %>
-      <% if @student.errors.any? %>
-        <div id="error_explanation">
-          <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+<div id="contact_us">
+  <h1 id="contact_us_h1">联系我们</h1>
 
-          <ul>
-          <% @student.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
+    <div id="form_wrapper">
+        <%= form_for(@student) do |f| %>
+          <% if @student.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@student.errors.count, "error") %> prohibited this student from being saved:</h2>
+
+              <ul>
+              <% @student.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+              <% end %>
+              </ul>
+            </div>
           <% end %>
-          </ul>
-        </div>
-      <% end %>
 
-      <div class="field">
-        <%= f.label :student_name, value="姓名", :id => "stu_name_label" %>
-        <%= f.text_field :student_name, :class => "stu_input" %>
-      </div>
-      <div class="field">
-        <%= f.label :obtain_courses, value="学习课程" %>
-        <%= f.text_field :obtain_courses, :class => "stu_input" %>
-      </div>
-      <div class="field">
-        <%= f.label :contact_information, value="联系方式" %>
-        <%= f.text_field :contact_information, :class => "stu_input" %>
-      </div>
-      <div class="actions" id="stu_submit">
-        <%= f.submit(value = "提交", :id => "stu_submit_button") %>
-      </div>
-    <% end %>
+          <div class="field">
+            <%= f.label :student_name, value="姓名", :id => "stu_name_label" %>
+            <%= f.text_field :student_name, :class => "stu_input" %>
+          </div>
+          <div class="field">
+            <%= f.label :obtain_courses, value="学习课程" %>
+            <%= f.text_field :obtain_courses, :class => "stu_input" %>
+          </div>
+          <div class="field">
+            <%= f.label :contact_information, value="联系方式" %>
+            <%= f.text_field :contact_information, :class => "stu_input" %>
+          </div>
+          <div class="actions" id="stu_submit">
+            <%= f.submit(value = "提交", :id => "stu_submit_button") %>
+          </div>
+        <% end %>
+    </div>
+
+  <%= link_to 'Back', students_path %>
+
 </div>
