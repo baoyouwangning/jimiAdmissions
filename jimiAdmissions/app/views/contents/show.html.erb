@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Header:</strong>
+  <%= @content.header %>
+</p>
+
+<p>
+  <strong>Teachingaims:</strong>
+  <%= @content.teachingAims %>
+</p>
+
+<p>
+  <strong>Faculty:</strong>
+  <%= @content.faculty %>
+</p>
+
+<p>
+  <strong>Coursedescriptionandprice:</strong>
+  <%= @content.courseDescriptionAndPrice %>
+</p>
+
+<p>
+  <strong>Relationships:</strong>
+  <%= @content.relationships %>
+</p>
+
+<%= link_to 'Edit', edit_content_path(@content) %> |
+<%= link_to 'Back', contents_path %>

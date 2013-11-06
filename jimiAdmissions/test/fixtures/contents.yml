@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  header: MyText
+  teachingAims: MyText
+  faculty: MyText
+  courseDescriptionAndPrice: MyText
+  relationships: MyText
+
+two:
+  header: MyText
+  teachingAims: MyText
+  faculty: MyText
+  courseDescriptionAndPrice: MyText
+  relationships: MyText
