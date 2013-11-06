@@ -1,14 +1,22 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
+<<<<<<< HEAD
   bannerDescription: MyText
+=======
+  header: MyText
+>>>>>>> 24d4e9f38d522a0813bcebc98fcbc3c1d0806e2b
   teachingAims: MyText
   faculty: MyText
   courseDescriptionAndPrice: MyText
   relationships: MyText
 
 two:
+<<<<<<< HEAD
   bannerDescription: MyText
+=======
+  header: MyText
+>>>>>>> 24d4e9f38d522a0813bcebc98fcbc3c1d0806e2b
   teachingAims: MyText
   faculty: MyText
   courseDescriptionAndPrice: MyText
