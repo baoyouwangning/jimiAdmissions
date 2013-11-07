@@ -1,13 +1,13 @@
-<h1>Listing contents</h1>
+<h1>招生页内容</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Bannerdescription</th>
-      <th>Teachingaims</th>
-      <th>Faculty</th>
-      <th>Coursedescriptionandprice</th>
-      <th>Relationships</th>
+      <th>几米招生简介</th>
+      <th>NO.1教学目标</th>
+      <th>NO.2师资力量</th>
+      <th>NO.3课程介绍及价格</th>
+      <th style="width:90px;">NO.4关系网</th>
       <th></th>
       <th></th>
       <th></th>
@@ -23,7 +23,7 @@
         <td><%= content.courseDescriptionAndPrice %></td>
         <td><%= content.relationships %></td>
         <td><%= link_to 'Show', content %></td>
-        <td><%= link_to 'Edit', edit_content_path(content) %></td>
+        <td><%= link_to 'Update', edit_content_path(content) %></td>
         <td><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>

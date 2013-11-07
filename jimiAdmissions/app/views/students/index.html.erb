@@ -1,11 +1,11 @@
-<h1>Listing students</h1>
+<h1>学生列表</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Student name</th>
-      <th>Obtain courses</th>
-      <th>Contact information</th>
+      <th>学生姓名</th>
+      <th>学习课程</th>
+      <th>联系方式</th>
       <th></th>
       <th></th>
       <th></th>
@@ -18,9 +18,9 @@
         <td><%= student.student_name %></td>
         <td><%= student.obtain_courses %></td>
         <td><%= student.contact_information %></td>
-        <td><%= link_to 'Show', student %></td>
-        <td><%= link_to 'Edit', edit_student_path(student) %></td>
-        <td><%= link_to 'Destroy', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '详细', student %></td>
+        <td><%= link_to '编辑', edit_student_path(student) %></td>
+        <td><%= link_to '删除', student, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
