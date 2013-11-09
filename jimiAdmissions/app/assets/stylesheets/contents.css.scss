@@ -1,6 +1,99 @@
 // Place all the styles related to the contents controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#wrapper {
+  position: absolute;
+  left:0px;
+  width:100%;
+}
+
 h1 {
   text-align:center;
+}
+ /*#header style*/
+div#header {
+  width:100%;
+  height:427px;
+  background:yellow;
+}
+div#header div#banner_auto {
+  width: 1024px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+div#header div#banner_auto #banner_logo {
+  position: relative;
+  top:0px;
+}
+
+
+
+
+
+/*#main_content style*/
+div#main_content {
+  width:960px;
+  margin:0 auto;
+}
+
+div#main_content h1 {
+  text-align:left;
+  color:#bd0a01;
+  font:20px Arial,Helvetica,sans-serif
+}
+div.title_content {
+  clear:both;
+  overflow: hidden;
+}
+div.title_content img {
+  float:left;
+}
+div.title_content h1 {
+  float:left;
+}
+
+
+/*_footer style*/
+#footer {
+  clear: both;
+  width:100%;
+  background: url(image_path("contents/bottom_back.png")) repeat;
+  overflow: hidden;
+}
+#footer #jimi_formation {
+  padding-top:76px;
+  padding-bottom: 43px;
+  overflow: hidden;
+  width:700px;
+  margin:0 auto;
+}
+#footer p {
+  float: left;
+  width:100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color:#fff;
+  margin:6px;
+  text-align: center;
+}
+#footer #jimi_formation p span {
+  float: left;
+  text-align: left;
+}
+#footer #jimi_formation p span.footer_left {
+  float: left;
+  width:74%;
+}
+#footer #jimi_formation p span a {
+  color:#fff;
+}
+.follow {
+  float: right;
+}
+a#website {
+  color:#fff;
+}
+a#website:hover {
+  text-decoration: underline;
 }
