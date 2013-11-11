@@ -1,4 +1,8 @@
 JimiAdmissions::Application.routes.draw do
+  resources :relationships
+
+  resources :course_description_and_prices
+
   resources :contents
 
   resources :students

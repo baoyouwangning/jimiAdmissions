@@ -14,3 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+window.onload = function () {
+    document.getElementById("wrapper").style.width = screen.width + "px";
+}

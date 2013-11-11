@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131106100200) do
+ActiveRecord::Schema.define(version: 20131109150246) do
 
   create_table "contents", force: true do |t|
     t.text     "bannerDescription"
@@ -19,6 +19,22 @@ ActiveRecord::Schema.define(version: 20131106100200) do
     t.text     "faculty"
     t.text     "courseDescriptionAndPrice"
     t.text     "relationships"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "course_description_and_prices", force: true do |t|
+    t.string   "course_name"
+    t.string   "course_hour"
+    t.string   "course_price"
+    t.string   "course_teacher"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "relationships", force: true do |t|
+    t.string   "team_name"
+    t.string   "team_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -20,7 +20,6 @@ div#form_wrapper {
 }
 h1#contact_us_h1 {
   padding-top:30px;
-  padding-left: 50px;
   text-align:left;
 }
 label#stu_name_label {
@@ -28,6 +27,7 @@ label#stu_name_label {
 }
 input.stu_input {
   float:right;
+  height:21px;
 }
 div#stu_submit {
   float:right;

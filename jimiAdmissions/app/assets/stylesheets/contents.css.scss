@@ -2,10 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+
+/*contents show style*/
+
 #wrapper {
-  position: absolute;
-  left:0px;
-  width:100%;
+  margin:0 auto;
+  overflow: hidden;
+  background-color: sandybrown;;
 }
 
 h1 {
@@ -19,40 +23,78 @@ div#header {
 }
 div#header div#banner_auto {
   width: 1024px;
-  overflow: hidden;
   margin: 0 auto;
 }
 div#header div#banner_auto #banner_logo {
   position: relative;
+  height: 250px;
   top:0px;
 }
-
-
-
-
+div#header div#banner_auto #banner_logo img#jimi_logo {
+  position: absolute;
+  top:20px;
+  width:280px;
+}
+div#header div#banner_auto #banner_logo img#jimi_teach {
+  position: absolute;
+  right:0px;
+  bottom:0px;
+  width:490px;
+}
+div#header div#banner_auto #banner_logo img#shakeHands {
+  position: absolute;
+  left:0px;
+  bottom:-201px;
+}
 
 /*#main_content style*/
 div#main_content {
   width:960px;
   margin:0 auto;
 }
-
+div#main_content p {
+  width:91.6%;
+  padding-left:81px;
+  font-size: 17px;
+  line-height: 24px;
+  text-indent: 34px;
+}
+div#main_content p#banner_description {
+  width:100%;
+  line-height: 34px;
+  padding-left: 0px;
+  text-indent: 151px;
+  font-size:24px;
+  color: darkgoldenrod;
+}
+div#main_content p#courseDescriptionAndPrice {
+  text-indent: 0px;
+  text-align: left;
+}
 div#main_content h1 {
   text-align:left;
   color:#bd0a01;
-  font:20px Arial,Helvetica,sans-serif
+  font: bold 20px Arial,Helvetica,sans-serif
 }
-div.title_content {
+div#main_content div.title_content {
   clear:both;
   overflow: hidden;
 }
-div.title_content img {
+div#main_content div.title_content img {
   float:left;
 }
-div.title_content h1 {
+div#main_content div.title_content h1 {
+  height:76px;
   float:left;
+  margin-left:16px;
+  line-height:76px;
 }
 
+
+  /*#clear line*/
+div#clear {
+  clear:both;
+}
 
 /*_footer style*/
 #footer {
@@ -97,3 +139,11 @@ a#website {
 a#website:hover {
   text-decoration: underline;
 }
+
+
+
+
+/*contents index.html style*/
+//table#content_index_table tr, table#content_index_table th, table#content_index_table td {
+//  float:left;
+//}

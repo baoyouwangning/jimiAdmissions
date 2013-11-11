@@ -11,6 +11,8 @@ class ContentsController < ApplicationController
   # GET /contents/1.json
   def show
     @student = Student.new
+    @course_description_and_prices = CourseDescriptionAndPrice.all
+    @relationships = Relationship.all
   end
 
   # GET /contents/new
