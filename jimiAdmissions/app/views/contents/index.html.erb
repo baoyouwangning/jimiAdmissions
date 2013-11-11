@@ -1,35 +1,23 @@
 <h1>招生页内容</h1>
 
-<table id="content_index_table">
-  <thead>
-    <tr>
-      <th>几米招生简介</th>
-      <th>NO.1教学目标</th>
-      <th>NO.2师资力量</th>
-      <th>NO.3课程介绍及价格</th>
-      <th style="width:90px;">NO.4关系网</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-
-  <tbody>
+  <div id="contents_index">
     <% @contents.each do |content| %>
-      <tr>
-        <td><%= content.bannerDescription %></td>
-        <td><%= content.teachingAims %></td>
-        <td><%= content.faculty %></td>
-        <td><%= content.courseDescriptionAndPrice %></td>
-        <td><%= content.relationships %></td>
-        <td><%= link_to 'Show', content %></td>
-        <td><%= link_to 'Update', edit_content_path(content) %></td>
-        <td><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+       <div>
+         <h3>几米招生简介</h3>
+        <div><%= content.bannerDescription %></div>
+         <h3>NO.1教学目标</h3>
+        <div><%= content.teachingAims %></div>
+        <h3>NO.2师资力量</h3>
+        <div><%= content.faculty %></div>
+         <h3>NO.3课程介绍及价格</h3>
+        <div><%= content.courseDescriptionAndPrice %></div>
+         <h3>NO.4关系网</h3>
+        <div><%= content.relationships %></div>
+        <div><%= link_to 'Show', content %></div>
+        <div><%= link_to 'Update', edit_content_path(content) %></div>
+        <div><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+       </div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Content', new_content_path %>
+    <br>
+    <%= link_to 'New Content', new_content_path %>
+  </div>

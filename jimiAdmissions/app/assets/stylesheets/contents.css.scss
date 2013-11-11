@@ -143,7 +143,21 @@ a#website:hover {
 
 
 
+/*contents edit.html style*/
+div#contents_edit_form {
+  width:960px;
+  margin:0 auto;
+}
+div#contents_edit_form .contents_edit_text_area {
+  width:960px;
+  padding:6px;
+  height:80px;
+}
+
+
+
 /*contents index.html style*/
-//table#content_index_table tr, table#content_index_table th, table#content_index_table td {
-//  float:left;
-//}
+div#contents_index {
+  width:960px;
+  margin:0 auto;
+}
