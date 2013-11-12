@@ -34,9 +34,25 @@ div#stu_submit {
   width:172px;
   text-align:center;
 }
-input#stu_submit_button {
-  width:60px;
-  height:28px;
+input.buttonStyle {
+  margin:0 auto;
+  height:35px;
+  width:81px;
+  border: 1px solid #cecece;
+  border-bottom-color: #a0a0a0;
+  cursor: pointer;
+  display: block;
+  font-family: "宋体";
+  margin-top: 6px;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 6px;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  background: linear-gradient(to bottom, #fff 0, #f3f3f3 100%);
+  border-radius: 3px;
 }
 
 

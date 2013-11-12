@@ -1,7 +1,7 @@
-<div id="contact_us">
+<div id="contact_us" ng-app>
   <h1 id="contact_us_h1">联系我们</h1>
 
-    <div id="form_wrapper">
+    <div id="form_wrapper" ng-controller="studentCreate">
         <%= form_for(@student) do |f| %>
           <% if @student.errors.any? %>
             <div id="error_explanation">
@@ -28,11 +28,8 @@
             <%= f.text_field :contact_information, :class => "stu_input" %>
           </div>
           <div class="actions" id="stu_submit">
-            <%= f.submit(value = "提交", :id => "stu_submit_button") %>
+            <%= f.submit(value = "提交", :class => "buttonStyle", :id => "{{createButtonStyle}}", "ng-click" => "createStudent()") %>
           </div>
         <% end %>
     </div>
-
-  <%= link_to 'Back', students_path %>
-
 </div>
