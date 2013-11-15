@@ -8,7 +8,11 @@
 
 function studentCreate($scope) {
     $scope.createButtonStyle = "grayButton";
-    $("#stu_submit_button").click(function () {
-        alert("hell");
-    })
+    $scope.createStudent = function () {
+        if($scope.createButtonStyle == "grayButton")
+        {
+            return;
+        }
+    }
+
 }
