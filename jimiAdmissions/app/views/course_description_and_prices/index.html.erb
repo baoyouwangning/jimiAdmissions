@@ -1,0 +1,21 @@
+<h1 style="margin-top:10px;">课程简介及价格</h1>
+
+<table id="course_description_and_price">
+  <tbody>
+  <% @course_description_and_prices.each do |course_description_and_price| %>
+      <tr>
+        <td><%= course_description_and_price.course_name %></td>
+        <td><%= course_description_and_price.course_hour %></td>
+        <td><%= course_description_and_price.course_price %></td>
+        <td><%= course_description_and_price.course_teacher %></td>
+        <td><%= link_to 'Show', course_description_and_price %></td>
+        <td><%= link_to 'Edit', edit_course_description_and_price_path(course_description_and_price) %></td>
+        <td><%= link_to 'Destroy', course_description_and_price, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Course description and price', new_course_description_and_price_path %>

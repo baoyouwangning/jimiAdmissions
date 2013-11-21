@@ -1,0 +1,58 @@
+// Place all the styles related to the students controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+div#contact_us
+{
+   width:960px;
+   margin:0 auto;
+   background: url(image_path("students/aircraft_formbg.png")) right no-repeat;
+   background-color:  #ffca84;
+   overflow: hidden;
+}
+
+/*_form style*/
+div#form_wrapper {
+  width:260px;
+  margin:0 auto;
+  font:bold 19px "黑体";
+  color:#000000;
+}
+h1#contact_us_h1 {
+  padding-top:30px;
+  text-align:left;
+}
+label#stu_name_label {
+  margin-left:40px;
+}
+input.stu_input {
+  float:right;
+  height:21px;
+}
+div#stu_submit {
+  float:right;
+  width:172px;
+  text-align:center;
+}
+input.buttonStyle {
+  margin:0 auto;
+  height:35px;
+  width:81px;
+  border: 1px solid #cecece;
+  border-bottom-color: #a0a0a0;
+  cursor: pointer;
+  display: block;
+  font-family: "宋体";
+  margin-top: 6px;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 6px;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  background: linear-gradient(to bottom, #fff 0, #f3f3f3 100%);
+  border-radius: 3px;
+}
+
+
