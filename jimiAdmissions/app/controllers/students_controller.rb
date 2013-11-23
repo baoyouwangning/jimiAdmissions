@@ -1,8 +1,7 @@
 class StudentsController < ApplicationController
 
-  before_filter :authenticate_user, :except => [:show, :index]
-
   before_action :set_student, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, except: [:create]
 
   # GET /students
   # GET /students.json
@@ -32,6 +31,7 @@ class StudentsController < ApplicationController
     respond_to do |format|
       if @student.save
         #format.html { head :no_content}
+        #url_for :controller => 'contents', :action => 'show', :id => 1
         format.html { redirect_to(root_path) }
         format.json { head :no_content}
       else

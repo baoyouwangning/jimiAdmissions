@@ -1,5 +1,7 @@
 JimiAdmissions::Application.routes.draw do
+
   devise_for :users
+
   resources :relationships
 
   resources :course_description_and_prices
@@ -8,8 +10,8 @@ JimiAdmissions::Application.routes.draw do
 
   resources :students
 
-
   root to: "contents#show"
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

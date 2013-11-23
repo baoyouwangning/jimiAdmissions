@@ -1,4 +1,5 @@
 class CourseDescriptionAndPricesController < ApplicationController
+
   before_action :set_course_description_and_price, only: [:show, :edit, :update, :destroy]
 
   # GET /course_description_and_prices
