@@ -17,6 +17,7 @@ class StudentsController < ApplicationController
   # GET /students/new
   def new
     @student = Student.new
+    @course_description_and_prices = CourseDescriptionAndPrice.all
   end
 
   # GET /students/1/edit
@@ -32,7 +33,7 @@ class StudentsController < ApplicationController
       if @student.save
         #format.html { head :no_content}
         #url_for :controller => 'contents', :action => 'show', :id => 1
-        format.html { redirect_to(root_path) }
+        format.html { redirect_to root_path, notice: '提交成功！'  }
         format.json { head :no_content}
       else
         format.html { render action: 'new' }

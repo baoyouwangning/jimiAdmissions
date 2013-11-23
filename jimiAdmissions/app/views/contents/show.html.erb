@@ -1,4 +1,7 @@
-<div id="wrapper">
+<div id="wrapper" ng-app  ng-controller="contentsController">
+
+  <p id="notice" class="contentsNotice"><%= notice %></p>
+
     <div id="header">
       <div id="banner_auto">
         <div id="banner_logo">
@@ -10,7 +13,7 @@
     </div>
 
     <div id="main_content">
-        <p id="notice"><%= notice %></p>
+
 
         <p id="banner_description">
           <%= @content.bannerDescription %>

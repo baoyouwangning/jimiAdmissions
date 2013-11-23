@@ -12,6 +12,15 @@
   background: #ffca84;
 }
 
+p#notice {
+  text-align:center;
+}
+p.contentsNotice {
+  font-size: 30px;
+  font-family: "微软雅黑","黑体","宋体";
+  overflow: hidden;
+}
+
 h1 {
   text-align:center;
 }
@@ -161,3 +170,5 @@ div#contents_index {
   width:960px;
   margin:0 auto;
 }
+
+
