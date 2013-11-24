@@ -15,6 +15,5 @@ function  contentsController($scope) {
         setTimeout(function() {
             $("#notice").slideUp(1500);
         }, 1600);
-
     }
 }

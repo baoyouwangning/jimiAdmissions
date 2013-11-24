@@ -26,7 +26,7 @@
             <div class="Menu" id="List2">
               <div class="Menu2">
                 <ul>
-                  <% @course_description_and_prices.each do |course_description_and_price| %>
+                  <% @course_description_and_prices.to_a.each do |course_description_and_price| %>
                       <li class="courseLists" ng-mousedown="getValue('txt2','<%= course_description_and_price.course_name %>');showAndHide('List2','hide');"><%= course_description_and_price.course_name %></li>
                   <% end %>
                 </ul>

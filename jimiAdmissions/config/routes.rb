@@ -1,5 +1,7 @@
 JimiAdmissions::Application.routes.draw do
 
+  get 'users/sign_up' => 'errors#handle'
+
   devise_for :users
 
   resources :relationships

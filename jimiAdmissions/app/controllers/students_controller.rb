@@ -36,7 +36,7 @@ class StudentsController < ApplicationController
         format.html { redirect_to root_path, notice: '提交成功！'  }
         format.json { head :no_content}
       else
-        format.html { render action: 'new' }
+        format.html { redirect_to root_path, notice: '提交失败！'}
         format.json { render json: @student.errors, status: :unprocessable_entity }
       end
     end
