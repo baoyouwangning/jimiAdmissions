@@ -47,7 +47,7 @@ class ContentsController < ApplicationController
   def update
     respond_to do |format|
       if @content.update(content_params)
-        format.html { redirect_to @content, notice: 'Content was successfully updated.' }
+        format.html { redirect_to @content, notice: '内容更新成功!' }
         format.json { head :no_content }
       else
         format.html { render action: 'edit' }
