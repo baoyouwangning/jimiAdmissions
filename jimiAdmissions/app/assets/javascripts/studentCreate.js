@@ -10,51 +10,48 @@ function studentCreate($scope) {
     $scope.inputCourses = '';
 
     $("li.courseLists").mouseover(function () {
-        this.style.backgroundColor = "#A9A9A9";
-        this.style.color = "#FFFFFF";
+        $(this).css({
+            "background-color" : "#A9A9A9",
+            "color" : "#FFFFFF"
+        })
     })
     $("li.courseLists").mouseout(function () {
-        this.style.backgroundColor = "#FFFFFF";
-        this.style.color = "#696969";
+        $(this).css({
+            "background-color" : "#FFFFFF",
+            "color" : "#696969"
+        })
+    })
+    $("li#clearSelect").mouseover(function () {
+        $(this).css({"color":"red"})
     })
 
-    //判断按钮
+    //按钮
     $scope.createButtonStyle = "grayButton";
-    $scope.createStudent = function () {
-        if($scope.createButtonStyle == "grayButton")
-        {
-            return;
-        }
-    }
 
+    //student_obtain_courses输入框
+    $("#student_obtain_courses").attr("readonly","readonly");
 
-    $scope.showAndHide = function (obj,types) {
-        var Layer=window.document.getElementById(obj);
-        switch(types){
+    $scope.showAndHide = function (listObj, display) {
+        var Layer = window.document.getElementById(listObj);
+        switch (display) {
             case "show":
-                $("#"+obj).slideDown('fast');
+                $("#" + listObj).slideDown('fast');
                 break;
             case "hide":
-                $("#"+obj).slideUp('fast');
+                $("#" + listObj).slideUp('fast');
                 break;
         }
     }
-    $scope.getValue = function (obj,str) {
-        if($scope.inputCourses.length < 1)
-        {
-            $scope.inputCourses = str;
+    $scope.getValue = function (inputObj, selectedCourses) {
+        if ($scope.inputCourses.length < 1 && selectedCourses != "clearAll") {
+            $scope.inputCourses = selectedCourses;
         }
-        else if( $scope.inputCourses.indexOf(str) < 0)
+        else if( selectedCourses == "clearAll" )
         {
-            $scope.inputCourses += ';' + str;
+            $scope.inputCourses = '';
+        }
+        else if ($scope.inputCourses.indexOf(selectedCourses) < 0) {
+            $scope.inputCourses += ';' + selectedCourses;
         }
     }
-
-
-    $("document").ready(function () {
-        $("input#student_obtain_courses").bind("onkeydown onkeyup oncontextmenu",function () {
-            alert(1);
-            return false;})
-    })
-
 }

@@ -2,6 +2,8 @@ JimiAdmissions::Application.routes.draw do
 
   get 'users/sign_up' => 'errors#handle'
 
+  get 'adminLogin' => "students#index"
+
   devise_for :users
 
   resources :relationships
