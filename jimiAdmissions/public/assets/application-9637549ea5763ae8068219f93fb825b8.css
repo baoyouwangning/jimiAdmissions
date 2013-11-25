@@ -1,0 +1,370 @@
+@charset "UTF-8";/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+
+    /*CSS init*/
+
+* {
+    margin:0px;
+    padding:0px;
+}
+img {
+    border:none;
+}
+ol,ul,li {
+    list-style:none;
+    float:left;
+}
+a {
+    text-decoration:none;
+}
+body {
+    background:#fff;
+    color:#555;
+    font-size:14px;
+    font-family: "黑体";
+}
+table {
+    margin:0 auto;
+}
+
+/*contents show style*/
+#wrapper {
+  margin: 0 auto;
+  overflow: hidden;
+  background: #ffca84; }
+
+p#notice {
+  text-align: center; }
+
+p.contentsNotice {
+  font-size: 30px;
+  font-family: "微软雅黑","黑体","宋体";
+  overflow: hidden; }
+
+h1 {
+  text-align: center; }
+
+/*#header style*/
+div#header {
+  width: 100%;
+  height: 427px;
+  background: #fef08d; }
+
+div#header div#banner_auto {
+  width: 1024px;
+  margin: 0 auto; }
+
+div#header div#banner_auto #banner_logo {
+  position: relative;
+  height: 250px;
+  top: 0px; }
+
+div#header div#banner_auto #banner_logo img#jimi_logo {
+  position: absolute;
+  top: 20px;
+  width: 280px; }
+
+div#header div#banner_auto #banner_logo img#jimi_teach {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 490px; }
+
+div#header div#banner_auto #banner_logo img#shakeHands {
+  position: absolute;
+  left: 0px;
+  bottom: -201px; }
+
+/*#main_content style*/
+div#main_content {
+  width: 960px;
+  margin: 0 auto; }
+
+div#main_content p {
+  width: 91.6%;
+  padding-left: 81px;
+  font-size: 17px;
+  line-height: 24px;
+  text-indent: 34px; }
+
+div#main_content p#banner_description {
+  width: 100%;
+  line-height: 34px;
+  padding-left: 0px;
+  text-indent: 151px;
+  font-size: 24px;
+  color: darkgoldenrod; }
+
+div#main_content p#courseDescriptionAndPrice {
+  text-indent: 0px;
+  text-align: left; }
+
+div#main_content h1 {
+  text-align: left;
+  color: #bd0a01;
+  font: bold 20px Arial, Helvetica, sans-serif; }
+
+div#main_content div.title_content {
+  clear: both;
+  overflow: hidden; }
+
+div#main_content div.title_content img {
+  float: left; }
+
+div#main_content div.title_content h1 {
+  height: 76px;
+  float: left;
+  margin-left: 16px;
+  line-height: 76px; }
+
+/*#clear line*/
+div#clear {
+  clear: both; }
+
+/*_footer style*/
+#footer {
+  clear: both;
+  width: 100%;
+  background: url("/assets/contents/bottom_back.png") repeat;
+  overflow: hidden; }
+
+#footer #jimi_formation {
+  padding-top: 76px;
+  padding-bottom: 43px;
+  overflow: hidden;
+  width: 700px;
+  margin: 0 auto; }
+
+#footer p {
+  float: left;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  margin: 6px;
+  text-align: center; }
+
+#footer #jimi_formation p span {
+  float: left;
+  text-align: left; }
+
+#footer #jimi_formation p span.footer_left {
+  float: left;
+  width: 74%; }
+
+#footer #jimi_formation p span a {
+  color: #fff; }
+
+.follow {
+  float: right; }
+
+a#website {
+  color: #fff; }
+
+a#website:hover {
+  text-decoration: underline; }
+
+/*contents edit.html style*/
+div#contents_edit_form {
+  width: 960px;
+  margin: 0 auto; }
+
+div#contents_edit_form .contents_edit_text_area {
+  width: 960px;
+  padding: 6px;
+  height: 80px; }
+
+/*contents index.html style*/
+div#contents_index {
+  width: 960px;
+  margin: 0 auto; }
+table#course_description_and_price td {
+  padding-right: 20px; }
+/* relationship index.html style*/
+div#relationship_index_wrapper {
+  width: 100%; }
+
+div#relationship_index_wrapper table {
+  width: 61%; }
+
+div#relationship_index_title {
+  float: left;
+  margin-left: 190px;
+  font-size: 17px;
+  line-height: 24px; }
+body {
+  background-color: #fff;
+  color: #333;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px; }
+
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 18px; }
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px; }
+
+a {
+  color: #333; }
+  a:visited {
+    color: #333; }
+  a:hover {
+    color: black;
+    background: none;
+    text-decoration: underline; }
+
+div.field, div.actions {
+  margin-bottom: 10px; }
+
+#notice {
+  color: green; }
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table; }
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0; }
+  #error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; }
+  #error_explanation ul li {
+    font-size: 12px;
+    list-style: square; }
+
+div#contact_us {
+  width: 960px;
+  margin: 0 auto;
+  background: url("/assets/students/aircraft_formbg.png") right no-repeat;
+  background-color: #ffca84;
+  overflow: hidden; }
+
+/*_form style*/
+div#form_wrapper {
+  width: 300px;
+  margin: 0 auto;
+  font: bold 19px "黑体";
+  color: #000000; }
+
+h1#contact_us_h1 {
+  padding-top: 30px;
+  text-align: left; }
+
+label#stu_name_label {
+  margin-left: 40px; }
+
+input.stu_input {
+  float: right;
+  height: 21px; }
+
+div#stu_submit {
+  float: right;
+  width: 172px;
+  text-align: center; }
+
+input.buttonStyle {
+  margin: 0 auto;
+  height: 35px;
+  width: 81px;
+  border: 1px solid #cecece;
+  border-bottom-color: #a0a0a0;
+  cursor: pointer;
+  display: block;
+  font-family: "宋体";
+  margin-top: 6px;
+  max-width: 250px;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 6px;
+  position: relative;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  background: linear-gradient(to bottom, white 0, #f3f3f3 100%);
+  border-radius: 3px; }
+
+/* _form type="text* id="txt2"*/
+body {
+  background: #fff; }
+
+.Menu {
+  position: relative;
+  width: 204px;
+  height: 208px;
+  z-index: 1;
+  background: #FFF;
+  border: 1px solid #000;
+  display: none; }
+
+.Menu2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  z-index: 1; }
+
+.Menu2 ul {
+  margin: 0;
+  padding: 0; }
+
+.Menu2 ul li {
+  width: 100%;
+  height: 25px;
+  line-height: 25px;
+  text-indent: 15px;
+  border-bottom: 1px dashed #ccc;
+  cursor: pointer; }
+
+input {
+  width: 200px; }
+
+.form {
+  width: 200px;
+  height: auto; }
+
+.form div {
+  position: relative;
+  top: 0;
+  left: 0;
+  margin-bottom: 5px; }
+
+#List2 {
+  left: 96px;
+  top: 4px; }
+
+#hideInput {
+  display: none; }
+
+li.courseLists {
+  font-size: 14px;
+  color: #696969; }

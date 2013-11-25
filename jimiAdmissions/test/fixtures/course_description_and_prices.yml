@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  course_name: MyString
+  course_hour: MyString
+  course_price: MyString
+  course_teacher: MyString
+
+two:
+  course_name: MyString
+  course_hour: MyString
+  course_price: MyString
+  course_teacher: MyString
