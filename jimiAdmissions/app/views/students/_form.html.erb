@@ -21,15 +21,15 @@
           </div>
           <div class="field">
             <%= f.label :obtain_courses, value="学习课程" %>
-            <%= f.text_field :obtain_courses, :class => "stu_input", "ng-model" => "inputCourses", "ng-change" => "scanChange();".html_safe,  "ng-click" => "showAndHide('List2','show');".html_safe, "ng-blur" => "showAndHide('List2','hide');".html_safe %>
+            <%= f.text_field :obtain_courses, :class => "stu_input", "ng-model" => "inputCourses", "ng-change" => "scanChange();".html_safe %>
 
             <div class="Menu" id="List2">
               <div class="Menu2">
                 <ul>
                   <% @course_description_and_prices.to_a.each do |course_description_and_price| %>
-                      <li class="courseLists" ng-mousedown="getValue('txt2','<%= course_description_and_price.course_name %>');showAndHide('List2','hide');"><%= course_description_and_price.course_name %></li>
+                      <li class="courseLists" title="<%= course_description_and_price.course_name %>"><%= course_description_and_price.course_name %></li>
                   <% end %>
-                  <li class="courseLists" ng-mousedown="getValue('txt2','clearAll');showAndHide('List2','hide');" id="clearSelect">清空</li>
+                  <li class="courseLists" title="clearAll" id="clearSelect">清空</li>
                 </ul>
               </div>
             </div>

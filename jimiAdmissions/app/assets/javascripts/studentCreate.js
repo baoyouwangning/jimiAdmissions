@@ -31,7 +31,7 @@ function studentCreate($scope) {
     //student_obtain_courses输入框
     $("#student_obtain_courses").attr("readonly","readonly");
 
-    $scope.showAndHide = function (listObj, display) {
+    function showAndHide(listObj, display) {
         var Layer = window.document.getElementById(listObj);
         switch (display) {
             case "show":
@@ -42,16 +42,28 @@ function studentCreate($scope) {
                 break;
         }
     }
-    $scope.getValue = function (inputObj, selectedCourses) {
-        if ($scope.inputCourses.length < 1 && selectedCourses != "clearAll") {
-            $scope.inputCourses = selectedCourses;
+    function getValue(inputObj, selectedCourses) {
+        var inputCourses = $("input#student_obtain_courses").val();
+
+        if (inputCourses.length < 1 && selectedCourses != "clearAll") {
+            $("input#student_obtain_courses").val(selectedCourses);
         }
         else if( selectedCourses == "clearAll" )
         {
-            $scope.inputCourses = '';
+            $("input#student_obtain_courses").val('');
         }
-        else if ($scope.inputCourses.indexOf(selectedCourses) < 0) {
-            $scope.inputCourses += ';' + selectedCourses;
+        else if (inputCourses.indexOf(selectedCourses) < 0) {
+            $("input#student_obtain_courses").val(inputCourses + ';' + selectedCourses);
         }
     }
+
+    //课程选择
+    $("input#student_obtain_courses").blur(function () { showAndHide('List2','hide'); })
+        .click(function () { showAndHide('List2','show');})
+
+    //课程列表
+    $("li.courseLists").mousedown(function () {
+        getValue('txt2',this.title);
+        showAndHide('List2','hide');
+    })
 }
