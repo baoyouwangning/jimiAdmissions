@@ -31,8 +31,6 @@ class StudentsController < ApplicationController
 
     respond_to do |format|
       if @student.save
-        #format.html { head :no_content}
-        #url_for :controller => 'contents', :action => 'show', :id => 1
         format.html { redirect_to root_path, notice: '提交成功！'  }
         format.json { head :no_content}
       else

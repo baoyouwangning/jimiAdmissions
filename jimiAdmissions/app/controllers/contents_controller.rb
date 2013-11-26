@@ -69,7 +69,7 @@ class ContentsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_content
-    #@content = Content.find(params[1])
+    #@content = Content.find(params[:id])
       @content = Content.find(1)
     end
 
