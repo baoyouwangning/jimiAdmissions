@@ -7,7 +7,7 @@
  */
 
 
-function  contentsController($scope) {
+$(document).ready(function () {
     var notice = $("#notice").html();
     if(notice.length > 1)
     {
@@ -16,4 +16,6 @@ function  contentsController($scope) {
             $("#notice").slideUp(1500);
         }, 1600);
     }
-}
+})
+
+

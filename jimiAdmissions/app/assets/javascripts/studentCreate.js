@@ -6,8 +6,9 @@
  * To change this template use File | Settings | File Templates.
  */
 
-function studentCreate($scope) {
-    $scope.inputCourses = '';
+$(document).ready(function () {
+
+    $("input#student_obtain_courses").val('');
 
     $("li.courseLists").mouseover(function () {
         $(this).css({
@@ -24,9 +25,6 @@ function studentCreate($scope) {
     $("li#clearSelect").mouseover(function () {
         $(this).css({"color":"red"})
     })
-
-    //按钮
-    $scope.createButtonStyle = "grayButton";
 
     //student_obtain_courses输入框
     $("#student_obtain_courses").attr("readonly","readonly");
@@ -59,11 +57,11 @@ function studentCreate($scope) {
 
     //课程选择
     $("input#student_obtain_courses").blur(function () { showAndHide('List2','hide'); })
-        .click(function () { showAndHide('List2','show');})
+        .click(function () { showAndHide('List2','show'); })
 
     //课程列表
     $("li.courseLists").mousedown(function () {
         getValue('txt2',this.title);
         showAndHide('List2','hide');
     })
-}
+})

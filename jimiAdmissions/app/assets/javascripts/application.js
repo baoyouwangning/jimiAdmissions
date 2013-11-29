@@ -18,11 +18,7 @@
 
 
 
-window.onload = function () {
-    document.getElementById("wrapper").style.width = screen.width + "px";
+$(document).ready(function () {
+    $("#wrapper").css({"width":screen.width});
+})
 
-
-
-
-
-}
