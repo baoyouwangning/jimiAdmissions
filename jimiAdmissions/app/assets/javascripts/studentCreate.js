@@ -45,13 +45,16 @@ $(document).ready(function () {
 
         if (inputCourses.length < 1 && selectedCourses != "clearAll") {
             $("input#student_obtain_courses").val(selectedCourses);
+            $("input#student_obtain_courses").attr({title:$("input#student_obtain_courses").val()});
         }
         else if( selectedCourses == "clearAll" )
         {
             $("input#student_obtain_courses").val('');
+            $("input#student_obtain_courses").attr({title:$("input#student_obtain_courses").val()});
         }
         else if (inputCourses.indexOf(selectedCourses) < 0) {
             $("input#student_obtain_courses").val(inputCourses + ';' + selectedCourses);
+            $("input#student_obtain_courses").attr({title:$("input#student_obtain_courses").val()});
         }
     }
 
