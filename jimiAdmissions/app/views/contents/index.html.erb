@@ -1,0 +1,23 @@
+<h1 style="margin-top:10px;">招生页内容</h1>
+
+  <div id="contents_index">
+    <% @contents.each do |content| %>
+       <div>
+         <h3>几米招生简介</h3>
+        <div><%= content.bannerDescription %></div>
+         <h3>NO.1教学目标</h3>
+        <div><%= content.teachingAims %></div>
+        <h3>NO.2师资力量</h3>
+        <div><%= content.faculty %></div>
+         <h3>NO.3课程介绍及价格</h3>
+        <div><%= content.courseDescriptionAndPrice %></div>
+         <h3>NO.4关系网</h3>
+        <div><%= content.relationships %></div>
+        <div><%= link_to 'Show', content %></div>
+        <div><%= link_to 'Update', edit_content_path(content) %></div>
+        <div><%= link_to 'Destroy', content, method: :delete, data: { confirm: 'Are you sure?' } %></div>
+       </div>
+    <% end %>
+    <br>
+    <%= link_to 'New Content', new_content_path %>
+  </div>

@@ -1,0 +1,55 @@
+<div id="wrapper">
+
+  <p id="notice" class="contentsNotice"><%= notice %></p>
+
+    <div id="header">
+      <div id="banner_auto">
+        <div id="banner_logo">
+          <%= image_tag("contents/Jimi.png", :id => "jimi_logo") %>
+          <%= image_tag("contents/Teach.png", :id => "jimi_teach") %>
+          <%= image_tag("contents/shakeHands.png", :id => "shakeHands") %>
+        </div>
+      </div>
+    </div>
+
+    <div id="main_content">
+
+
+        <p id="banner_description">
+          <%= @content.bannerDescription %>
+        </p>
+
+        <div class="title_content">
+            <%= image_tag("contents/teachingAims.png") %>
+            <h1 class="tie">NO.1&nbsp;&nbsp;教学目标</h1>
+        </div>
+        <p>
+          <%= @content.teachingAims %>
+        </p>
+
+        <div class="title_content">
+          <%= image_tag("contents/faculty.png") %>
+            <h1>NO.2&nbsp;&nbsp;师资力量</h1>
+        </div>
+        <p>
+          <%= @content.faculty.html_safe %>
+        </p>
+
+        <div class="title_content">
+          <%= image_tag("contents/courseDescriptionAndPrice.png") %>
+            <h1>NO.3&nbsp;&nbsp;课程简介及价格</h1>
+        </div>
+        <%= render "course_description_and_prices/index" %>
+
+        <div class="title_content">
+           <%= image_tag("contents/relationships.png") %>
+           <h1>NO.4&nbsp;&nbsp;关系网</h1>
+        </div>
+         <%= render "relationships/index" %>
+    </div>
+
+    <div id="clear"></div>
+    <%= render 'students/form' %>
+
+    <%= render 'footer' %>
+</div>

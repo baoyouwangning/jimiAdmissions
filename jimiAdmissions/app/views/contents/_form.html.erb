@@ -1,0 +1,39 @@
+
+<div id="contents_edit_form">
+    <%= form_for(@content) do |f| %>
+      <% if @content.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@content.errors.count, "error") %> prohibited this content from being saved:</h2>
+
+          <ul>
+          <% @content.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <div class="field">
+        <%= f.label :bannerDescription, value="jimi招生简介" %><br>
+        <%= f.text_area :bannerDescription, :class => "contents_edit_text_area" %>
+      </div>
+      <div class="field">
+        <%= f.label :teachingAims, value="教学目标" %><br>
+        <%= f.text_area :teachingAims, :class => "contents_edit_text_area" %>
+      </div>
+      <div class="field">
+        <%= f.label :faculty, value="师资力量" %><br>
+        <%= f.text_area :faculty, :class => "contents_edit_text_area" %>
+      </div>
+
+       <h5>课程简介及价格</h5>
+      <%= link_to '课程简介及价格', course_description_and_prices_path %>
+
+      <h5>关系网</h5>
+      <%= link_to '关系网', relationships_path %>
+
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    <% end %>
+</div>
