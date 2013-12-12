@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Course name:</strong>
+  <%= @course_description_and_price.course_name %>
+</p>
+
+<p>
+  <strong>Course hour:</strong>
+  <%= @course_description_and_price.course_hour %>
+</p>
+
+<p>
+  <strong>Course price:</strong>
+  <%= @course_description_and_price.course_price %>
+</p>
+
+<p>
+  <strong>Course teacher:</strong>
+  <%= @course_description_and_price.course_teacher %>
+</p>
+
+<%= link_to 'Edit', edit_course_description_and_price_path(@course_description_and_price) %> |
+<%= link_to 'Back', course_description_and_prices_path %>
